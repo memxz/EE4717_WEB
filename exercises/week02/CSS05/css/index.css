@@ -1,0 +1,28 @@
+
+body{
+	background-color: #E6E6FA;
+	color: #191970;
+}
+
+h1{
+	background-color: #191970;
+	color: #E6E6FA;
+	margin-bottom: 0;
+}
+
+h2{
+	background-color: #AEAED4;
+	color: #191970;
+}
+
+nav{
+	background-color: #E2E2EF;
+}
+
+.companyname{
+	color:#6A6AA7
+}
+
+footer{
+	color: #666666;
+}

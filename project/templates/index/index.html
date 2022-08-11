@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Base for Dashboard -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Index CSS -->
+    <link href="../../static/css/index/index.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Common CSS -->
+        <!-- Core CSS -->
+        <link href="../../static/css/core/core.css" rel="stylesheet" type="text/css">
+        
+        <!-- Template CSS -->
+        <link href="../../static/css/core/template.css" rel="stylesheet" type="text/css">
+
+        <!-- Custom Fonts -->
+        <link href="../../static/css/core/customfonts.css" rel="stylesheet" type="text/css">
+
+        <!--jQuery libraries-->
+        <script src="../../static/js/core/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+
+<mainContent>
+
+    <div id="imgSlider" class="w3-content w3-display-container shadow" style="max-width:800px">
+        <!-- Image Slider -->
+        <a href="../#about.html"><img class="mySlides" src="../../static/img/index/main_slider1" style="width:100%"></a>
+        <a href="../shop/browse.html"><img class="mySlides" src="../../static/img/index/main_slider2" style="width:100%"></a>
+        <a href="../contact/contact.html"><img class="mySlides" src="../../static/img/index/main_slider3" style="width:100%"></a>
+        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+            <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+    </div>
+
+    <div class="floatingImg">
+        <img src="../../static/img/index/main_formal3.png">
+    </div>
+
+    <div id="aboutUs">
+        <h2>ABOUT MIX &amp; MATCH</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div id="howitworks">
+        <h2>HOW IT WORKS</h2>
+        <div id="clothing">
+            <p>Choose your</p>
+            <b>CLOTHING</b>
+        </div>
+        <div id="design">
+            <p>Choose your</p>
+            <b>DESIGN</b>
+        </div>
+        <div id="size">
+            <p>Choose your</p>
+            <b>SIZE</b>
+        </div>
+        
+        <button type="button" class="buttonBlackInverse" onclick="location.href='../shop/browse.html';">SHOP NOW</button>
+    </div>
+
+    <div id="greyBanner">
+    </div>
+
+    <div id="howtomeasure">
+        <h2>HOW TO MEASURE YOURSELF</h2>
+
+        <!-- YouTube media player -->
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/nwBniB9amJY" frameborder="0"></iframe>
+    </div>
+
+
+
+</mainContent>
+
+</body>
+
+<!-- Image Slider Javascript -->
+    <script src="../../static/js/index/imgSlider.js"></script>
+
+<!--Button toggling Javascript-->
+    <script src="../../static/js/generateContent/commonContent.js"></script>
+    <script src="../../static/js/generateContent/inDivTabs.js"></script>
+    <script src="../../static/js/core/modal.js"></script>
+</html>

@@ -1,0 +1,131 @@
+/**ALLOW HIDDEN FOLDER**/
+defaults write com.apple.finder AppleShowAllFiles YES
+sudo killall Finder
+
+/**APACHE**/
+sudo apachectl start
+
+sudo apachectl stop
+
+sudo apachectl restart
+
+//Version of apache
+httpd -v
+
+//if local host does not work
+apachectl configtest
+
+/**GLOBAL ROOT**/
+//Your files that runs on the server stays in this folder
+/Library/WebServer/Documents/
+
+/**USER ROOT**/
+//If you want to create a user root - that you can work with files in
+//the root below create a sites folder in User/username
+/Users/username/Sites/
+
+//create a file called username.conf in
+/etc/apache2/users/
+
+cd /etc/apache2/users
+
+//work on this file
+sudo nano username.conf
+
+//add
+<Directory "/Users/username/Sites/">
+AllowOverride All
+Options Indexes MultiViews FollowSymLinks
+Require all granted
+</Directory>
+
+//permissions on this file
+-rw-r--r--   1 root  wheel  298 Jun 28 16:47 username.conf
+
+//change it with
+sudo chmod 644 username.conf
+
+//open httpd.conf and allow some modules
+sudo nano /etc/apache2/httpd.conf
+
+//First two are clean on install
+LoadModule authz_core_module libexec/apache2/mod_authz_core.so
+LoadModule authz_host_module libexec/apache2/mod_authz_host.so
+LoadModule userdir_module libexec/apache2/mod_userdir.so
+LoadModule include_module libexec/apache2/mod_include.so
+LoadModule rewrite_module libexec/apache2/mod_rewrite.so
+
+//Allow URL rewriting if you want clean permalinks
+sudo nano /etc/apache2/httpd.conf
+//search for "AllowOverride controls what" and write
+AllowOverride All
+
+//allow php
+LoadModule php5_module libexec/apache2/libphp5.so
+
+//uncommen this line
+Include /private/etc/apache2/extra/httpd-userdir.conf
+
+//open httpd-userdir.conf
+sudo nano /etc/apache2/extra/httpd-userdir.conf
+
+//uncomment and restart apache
+Include /private/etc/apache2/users/*.conf
+
+sudo apachectl restart
+
+//your root is now
+http://localhost/~username/
+
+//create a file called
+phpinfo.php
+//add to this file and open in browser
+<?php phpinfo(); ?>
+
+/**MYSQL**/
+//download mysql server at
+http://dev.mysql.com/downloads/mysql/
+
+//start your mysql server from the terminal
+sudo launchctl load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist
+//OR
+sudo /usr/local/mysql/support-files/mysql.server start﻿
+
+//navigate to
+cd /usr/local/mysql/bin
+
+//login with your temporary password
+./mysql -u root -p
+
+//type in the temporary password
+...
+
+//Stop the expiration of userpw !!!NOT RECOMENDED ON REAL SERVER!!!
+ALTER USER 'root'@'localhost' PASSWORD EXPIRE NEVER;
+
+//next change the password, otherwise you are not allowed to do anything
+//at and to the database
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('new-password-here');
+
+/**PHPMYADMIN**/
+
+//download the newest version of phpmyadmin at
+https://www.phpmyadmin.net/downloads/
+
+//copy the unzipped files to your Sites folder
+//create a new folder called config in the phpmyadmin folder
+mkdir ~/Sites/phpmyadmin/config
+
+//change permissions on this folder
+chmod o+w ~/Sites/phpmyadmin/config
+
+//go to
+http://localhost/~username/phpmyadmin/setup/
+
+//create a new server
+//in authentication set your mysql root user and pw
+//click save
+//you have now a config.inc.php in your config folder
+//change this file to the root folder and delete the config folder
+
+//finished ;)

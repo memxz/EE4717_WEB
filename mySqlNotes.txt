@@ -1,0 +1,32 @@
+
+// To show all databases
+show databases;
+
+// to use a particular database:
+use database-name;
+
+// to show all tables in a database:
+show tables;
+
+// to view an entire table
+select * from jamjamproducts;
+
+// to create a database
+CREATE DATABASE dbname;
+
+CREATE TABLE Persons
+(
+PersonID int,
+LastName varchar(255),
+FirstName varchar(255),
+Address varchar(255),
+City varchar(255)
+);
+
+// to give a database rights from php
+
+GRANT INSERT, SELECT, DELETE, UPDATE ON MixAndMatch.*
+TO 'ee4717'@'localhost'
+IDENTIFIED BY 'johnandrobert';
+
+

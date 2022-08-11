@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> JavaJam Coffee House</title>
+
+<link href="javajam.css" rel="stylesheet">
+</head>
+	 
+<body>
+  <div id="wrapper">
+   <h1 id="header"> <img src="javalogo.gif" width="620" height="117" title="JavaJam Coffee House"> </h1>
+
+    <div id="nav">
+    <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="music.html">chk</a></li>
+		<li><a href="jobs.html">Jobs</a></li>
+	</ul>
+    </div>
+
+	<div id="content">
+    <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk*</p>
+  		<form name="information" method="post" id="information" action="show_get.php">
+			<label for="myName"> *Name: </label> 
+			<input type="text" name ="myName" id="myName" required>
+
+			<label for="myPassword"> Password: </label>
+			<input type="password" name ="myPassword" id="myPassword">
+			
+			<label for="myEmail"> *E-mail: </label>
+			<input type="text" name ="myEmail" id="myEmail" required>
+			
+			<label for="myDate"> Start Date: </label>
+			<input type="date" name ="myDate" id="myDate">
+			
+			<label for="myExperience"> *Experience: </label>
+			<textarea name="myExperience" id="myExperience" cols="20" rows="2" required> </textarea>
+			
+			<input type="submit" value="Apply Now"> 
+		</form>
+		
+	</div>
+	<div id="footer">
+	<small><i> Copyright © 2016 JavaJam Coffee House</i><br>
+	<small><a href="mailto:robert@naquila.com">robert@naquila.com</a>
+	</div>
+	</div>
+	<script type="text/javascript"  src="validator2.js" ></script>
+	<!-- <script type="text/javascript"  src="validator2r.js"></script>  -->
+
+
+</body>
+</html>

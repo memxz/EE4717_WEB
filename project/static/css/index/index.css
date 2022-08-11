@@ -1,0 +1,154 @@
+.floatingImg{
+	float: left;
+	margin-left: 25px;
+}
+
+.floatingImg img{
+	width: 90%;
+	height: 90%
+}
+
+#howtomeasure, #aboutUs{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	padding-right: 25px;
+}
+
+#howitworks{
+	position:absolute;
+	right:25px;
+	width:55%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#howitworks div{
+	display: inline-block;
+	width:100px;
+	height:130px;
+	padding:10px;
+}
+
+#howitworks p{
+	margin-top: 40px;
+}
+
+#howitworks #clothing{
+	background: url("../../img/index/main_clothing");
+	background-position: center;
+}
+
+#howitworks #design{
+	background: url("../../img/index/main_design");
+	background-position: center;
+}
+
+#howitworks #size{
+	background: url("../../img/index/main_size");
+	background-position: center;
+}
+
+#greyBanner{
+	background: #f1f1f1;
+	height: 250px;
+}
+
+
+/*Imge Slider CSS*/
+.w3-content {
+    max-width: 980px;
+    margin: auto
+}
+
+.w3-display-container {
+    position: relative
+}
+
+.mySlides {
+	display:none
+}
+
+.w3-center {
+    text-align: center !important
+}
+
+.w3-section {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important
+}
+
+.w3-large {
+    font-size: 18px !important
+}
+
+.w3-text-white{
+    color: #fff !important
+}
+
+.w3-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.w3-left, .w3-right, .w3-badge {
+	cursor:pointer
+}
+
+.w3-left {
+    float: left !important
+}
+
+.w3-right {
+    float: right !important
+}
+
+.w3-badge {
+	height:15px;
+	width:0px;
+	padding:0;
+	background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    border-radius: 50%
+}
+
+.w3-border {
+    border: 1px solid #ccc !important
+}
+
+.w3-padding-left {
+    padding-left: 16px !important
+}
+
+.w3-padding-right {
+    padding-right: 16px !important
+}
+
+.w3-transparent {
+    background-color: transparent !important
+}
+
+.w3-hover-text-khaki, .w3-hover-white{
+    -webkit-transition: background-color .3s, color .15s, box-shadow .3s, opacity 0.3s;
+    transition: background-color .3s, color .15s, box-shadow .3s, opacity 0.3s
+}
+
+.w3-hover-text-khaki:hover {
+    color: #b4aa50 !important
+}
+
+.w3-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.w3-white, .w3-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+

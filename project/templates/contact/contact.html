@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Base for Dashboard -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Index CSS -->
+    <link href="../../static/css/contact/contact.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Common CSS -->
+        <!-- Core CSS -->
+        <link href="../../static/css/core/core.css" rel="stylesheet" type="text/css">
+        
+        <!-- Template CSS -->
+        <link href="../../static/css/core/template.css" rel="stylesheet" type="text/css">
+
+        <!-- Custom Fonts -->
+        <link href="../../static/css/core/customfonts.css" rel="stylesheet" type="text/css">
+
+        <!--jQuery libraries-->
+        <script src="../../static/js/core/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+<mainContent>
+<img src="../../static/img/contact/contactUs.png" id="contactUs">
+
+            <form name="contact" method="post" action="show_post.php">
+
+                <fieldset id="contact">
+
+                    <legend><h1>Contact Us</h2></legend>
+                    <br>
+
+                    <label for="myFirstName"> First Name<sup>*</sup> </label>
+                    <input type="text" name="myFirstName" id="myFirstName" required>
+
+                    <label for="myLastName"> Last Name<sup>*</sup> </label>
+                    <input type="text" name="myLastName" id="myLastName" required>
+
+                    <label for="myEmail"> Email<sup>*</sup> </label>
+                    <input type="text" name="myName" id="myEmail" required>
+
+                    <label for="myMobile"> Mobile </label>
+                    <input type="tel" name="myMobile" id="myMobile">
+
+                    <label for="myEnquiry"> Type of Enquiry </label>
+                    <select name="myEnquiry" id="myEnquiry">
+                        <option value="general">General Enquiry</option>
+                        <option value="product">Products/Services</option>
+                        <option value="shipping">Shipping</option>
+                        <option value="order">Order Status</option>
+                        <option value="website">Website</option>
+                    </select><br>
+
+                    <label for="myComment"> Comments<sup>*</sup> </label>
+                    <textarea name="myComment" id="myComment" cols="20" rows="6" required></textarea>
+
+                </fieldset>
+                
+                <button class="button buttonBlack inlineBlock" type="submit">SUBMIT</button>
+                <button class="button buttonBlack inlineBlock" type="reset">RESET</button>
+
+            </form>
+
+            <h1>Locate Us</h1>
+            <table id="locate">
+                <tr>
+                    <td id="locateText">
+                        <b id="company">Mix &amp; Match Pte Ltd</b>
+                        <p id="description">Computer Lab II<br>
+                        50 Nanyang Avenue<br>
+                        Singapore 639798<br>
+                        <a href="#mailto:enquiry@mixnmatch.com">enquiry@mixnmatch.com</a><br>
+                        (+65) 8765 4321<br></p>
+
+                    </td>
+                    <td id="locateImg">
+                        <img src="../../static/img/contact/map.png" id="locateUs">
+                    </td>
+                </tr>
+            </table>
+            
+</mainContent>
+<!--Button toggling Javascript-->
+<script src="../../static/js/generateContent/commonContent.js"></script>
+<!-- <script src="{%  static 'js/plugins/morris/raphael.min.js'%}"></script> -->
+
+</body>
+</html>

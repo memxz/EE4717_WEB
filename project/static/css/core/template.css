@@ -1,0 +1,223 @@
+
+
+
+@media (max-width: 900px) { /* if smaller than 900px */
+
+}
+
+@media (min-width: 900px) {
+    
+}
+
+body{
+    background-image: url("../../img/common/bg1.png");
+    background-repeat: repeat;
+    background-size: 5%
+}
+topnav > *, nav >*{
+    padding-right: 5%;
+
+}
+
+topnav, nav{ 
+    text-align: center;
+    padding-left: 10px;
+    background-color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+topnav a, nav a{ 
+    text-decoration: none;
+    font-weight: bold;
+    position:relative;
+    bottom:50px; 
+}
+
+topnav a:link,nav a:link{ color: #000000; }
+
+topnav a:visited, nav a:visited{ color: #000000; }
+
+topnav a:hover, nav a:hover{ color: #656565; }
+
+topnav img, nav img{
+    width: 15%;
+    height: 15%; 
+
+}
+
+footer{
+    background-color: #656565;
+    text-align: center;
+    color: white;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+input{
+    border-radius: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+textarea{
+    border-radius: 0px;
+    padding: 5px;
+}
+
+sup{
+    color: red;
+}
+
+.shadow{
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+button {
+    color: #555555;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttonBlack {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.buttonBlack:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.buttonBlackInverse {
+    background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+}
+
+.buttonBlackInverse:hover {
+    background-color: white;
+    color: black;
+}
+
+/*Tabs CSS*/
+    ul.tab {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+    /* Float the list items side by side */
+    ul.tab li {float: left;}
+
+    /* Style the links inside the list items */
+    ul.tab li[tab] {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    /* Change background color of links on hover */
+    ul.tab li[tab]:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    ul.tab li[tab]:focus, .active {
+        background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+
+    .tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    }
+
+    @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+
+/*Page CSS*/
+    #page-wrapper{
+        width:80%;
+        height:100%;
+        margin:auto;
+        background:blue;
+    }
+
+    leftcollar, rightcollar, #left-collar-bg,
+    #right-collar-bg{
+        background-size: 100% 100%;
+        background-attachment: scroll;
+    }
+    leftcollar, #left-collar-bg{ background-image: url(../../img/common/bg_collar_left.png); }
+    rightcollar, #right-collar-bg{ background-image: url(../../img/common/bg_collar_right.png); }
+
+    #section0,
+        #section1,
+        #section2,
+        #section3,
+        #section4,
+        #section5{
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 1% 0 0 0;
+        }
+
+    /*../img/indexPg/banner/header-banner.png*/
+        #section0{
+            background-image: url(../../img/indexPg/banner/header-banner_cmp.png);
+        }
+        #section1{
+            background-image: url(../../img/indexPg/about/about3_bg.png);
+        }
+        #section2{
+            background-image: url(../../img/indexPg/events/event2_bg.png);
+        }
+        #section3{
+            background-image: url(../../img/indexPg/featured/featured1_bg.png);
+        }
+
+        #section4{
+            background-image: url(../../img/indexPg/FAQ/faq_bg.png);
+        }
+
+        #section5{
+            /*background-image: url(../../img/indexPg/FAQ/faq_bg.png);*/
+        }
+        #section3 h1{
+            color: #000;
+        }
